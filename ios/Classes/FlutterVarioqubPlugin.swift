@@ -26,7 +26,7 @@ public class FlutterVarioqubPlugin: NSObject, FlutterPlugin {
         var vqCfg = VarioqubConfig.default
 
 
-        VarioqubFacade.shared.initialize(apiKey: apiKey, config: vqCfg, idProvider: nil, reporter: nil)
+        VarioqubFacade.shared.initialize(clientId: apiKey, config: vqCfg, idProvider: nil, reporter: nil)
         
         result(nil)
     case "set_default":
